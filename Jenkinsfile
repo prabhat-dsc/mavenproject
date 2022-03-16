@@ -18,7 +18,7 @@ pipeline{
        }
       stage('deploy'){
           steps{
-              sh "sudo su - test -c 'ansible-playbook /home/test/deploy.yml'"
+              sh "sudo su - test -c 'ansible-playbook /home/test/maven-project.yml'"
           }
       }
      }
